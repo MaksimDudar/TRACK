@@ -73,3 +73,4 @@ end
 gem "jquery-rails"
 gem "bootstrap"
 gem "sass-rails"
+gem "devise"

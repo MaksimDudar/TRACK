@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Слежение</h1><hr/><br/>
+<p><%= @track.created_at %></p>
+<p><%= @track.pl %> |
+<%= @track.pl2 %> |
+<%= @track.perecep2 %> |
+<%= @track.truck_by %> |
+<%= @track.driver_by %> |
+<%= @track.perecep %> |
+<%= @track.truck_rus %> |
+<%= @track.driver_rus %> |
+<%= @track.semi_trailer %> |
+<%= @track.country %></p>
+
+<p class="fs-5 fw-semibold">Все комментарии:</p>
+  <% @track.comments.each do |comment| %><hr/>
+    <p><strong> <i><p><%= comment.author %>:</i></strong> <br/></p>
+    <p><%= comment.body %></p>
+  <% end %><hr/>
+
+<p class="fs-5 fw-semibold">Добавить комментарий:</p>
+
+<p>
+  <%= form_for([@track, @track.comments.build]) do |f| %>
+    <p>
+
+    <div class="form-group mb-1 w-50">
+    <p>
+      <%= f.label :Комментарий, class: "form-label" %><br />
+      <%= f.text_area :body, class: "form-control" %>
+    </p>
+    </div>
+
+    <p>
+      <%= f.submit 'Сохранить', class:"btn btn-sm btn-primary" %>
+    </p>
+
+  <% end %>
+    </div>
+  </div>
+</div>
