@@ -1,0 +1,2 @@
+module TruckbyHelper
+end

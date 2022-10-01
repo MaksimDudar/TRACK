@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users
+  resources :home
+  resources :truckpl
+  resources :truckby
+  resources :driverby
+  resources :truckru
+  resources :driverru
+  resources :semitrailer
+  resources :strana
 
   root to: "home#index"
   get 'home/index'

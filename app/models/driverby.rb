@@ -1,0 +1,2 @@
+class Driverby < ApplicationRecord
+end

@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="p-3 mb-2 bg-info text-dark bg-opacity-25">
+  <h3>Список PL тягачей</h3></div>
+
+<% @truckpl.each do |truckpl| %><hr/>
+<div class="text-dark">
+<p> <%= truckpl.newtruckpl %></p>
+<%= button_to 'Удалить', truckpl_path(truckpl), method: :delete, data: { turbo_confirm: "Are you sure?" }, method: :delete, class:"btn btn-sm btn-danger", style:"--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .65rem;" %><p>
+<% end %>
+</div>

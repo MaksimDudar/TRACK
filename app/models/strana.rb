@@ -1,0 +1,2 @@
+class Strana < ApplicationRecord
+end

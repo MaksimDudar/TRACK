@@ -1,0 +1,2 @@
+module SemitrailerHelper
+end

@@ -1,0 +1,2 @@
+module TruckplHelper
+end

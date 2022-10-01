@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="field">
+        <h5>Добавить RUS тягач</h5>
+        <%= form_for :truckru, url: {action: "create"} do |f| %>
+        <%= f.text_field :newtruckru %>
+        <%= f.submit 'OK', class:"btn btn-sm btn-primary rounded-pill" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

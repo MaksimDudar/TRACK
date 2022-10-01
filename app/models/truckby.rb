@@ -1,0 +1,2 @@
+class Truckby < ApplicationRecord
+end

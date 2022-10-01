@@ -1,0 +1,2 @@
+class Semitrailer < ApplicationRecord
+end

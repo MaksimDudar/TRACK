@@ -1,0 +1,2 @@
+class Truckru < ApplicationRecord
+end

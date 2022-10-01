@@ -1,0 +1,2 @@
+module StranaHelper
+end
